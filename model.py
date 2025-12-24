@@ -2,8 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.utils import to_dense_batch
-
-# 导入同级目录下的模块
 from layers import SpatialStream, PositionalEncoding, CoAttnEncoderLayer, GRL, DomainClassifier
 from golden_style import StyleAlignLayer, GoldenStyleBank
 
@@ -62,4 +60,5 @@ class GSA_CAST(nn.Module):
 
         if return_style_info:
             return class_output, pred, domain_output.squeeze(), aggregated, style_infos, spatial_features_list
+
         return class_output, pred, domain_output.squeeze(), aggregated
