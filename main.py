@@ -6,14 +6,9 @@ import torch.nn.functional as F
 from torch_geometric.loader import DataLoader
 from sklearn.metrics import roc_auc_score, accuracy_score, f1_score, precision_score, recall_score
 import random
-
-# === 导入模型模块 ===
 from model import GSA_CAST
 from graph_align import SemanticAligner
-from golden_style import ch_stats, gram  # 复用统计函数
-
-# === 导入数据接口 (假设 datapipe.py 存在于同级目录) ===
-# 用户需要自行提供 datapipe.py
+from golden_style import ch_stats, gram
 from datapipe import create_cross_dataset_setup, load_cross_dataset_fold
 
 
@@ -291,4 +286,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()
