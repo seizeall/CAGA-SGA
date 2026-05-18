@@ -1,6 +1,6 @@
 # CAGA-SGA
 This is the official implementation of the CAGA-SGA model, and the related paper has been submitted to IEEE TAFFC.
-The default experiment in `main.py` is:
+
 
 ## 1. Overview
 
