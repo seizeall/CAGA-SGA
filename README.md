@@ -13,10 +13,8 @@ prepare dataset
 load one target-subject fold
 train with source-domain and target-domain batches
 evaluate on the target-domain test split
-save the best result of each target subject
+save result of each target subject
 ```
-
-
 
 ---
 
